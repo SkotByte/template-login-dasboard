@@ -2,11 +2,15 @@
 import { Card, Form, Input, Button, Alert, Typography, Divider } from 'antd'
 import { UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons'
 import { useAuthStore } from '../store/authStore'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from '../components/common/LanguageSwitcher'
+import ThemeSwitcher from '../components/common/ThemeSwitcher'
 
 const { Title, Text } = Typography
 
 const LoginPage = () => {
   const { login, error, clearError, isLoading } = useAuthStore()
+  const { t } = useTranslation()
   const [form] = Form.useForm()
 
   const handleSubmit = async (values: { email: string; password: string }) => {
@@ -16,6 +20,11 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="absolute top-4 right-4 flex gap-2">
+        <ThemeSwitcher />
+        <LanguageSwitcher />
+      </div>
+      
       <div className="w-full max-w-md">
         <Card className="shadow-2xl border-0 rounded-2xl">
           <div className="text-center mb-8">
@@ -23,10 +32,10 @@ const LoginPage = () => {
               <UserOutlined className="text-2xl text-white" />
             </div>
             <Title level={2} className="text-gray-800 mb-2">
-              Admin Login
+              {t('auth.loginTitle')}
             </Title>
             <Text type="secondary">
-              Sign in to access your dashboard
+              {t('auth.loginSubtitle')}
             </Text>
           </div>
 
@@ -50,30 +59,30 @@ const LoginPage = () => {
           >
             <Form.Item
               name="email"
-              label="Email Address"
+              label={t('auth.email')}
               rules={[
-                { required: true, message: 'Please enter your email' },
+                { required: true, message: t('auth.enterEmail') },
                 { type: 'email', message: 'Please enter a valid email' }
               ]}
             >
               <Input
                 prefix={<MailOutlined className="text-gray-400" />}
-                placeholder="Enter your email"
+                placeholder={t('auth.enterEmail')}
                 className="rounded-lg"
               />
             </Form.Item>
 
             <Form.Item
               name="password"
-              label="Password"
+              label={t('auth.password')}
               rules={[
-                { required: true, message: 'Please enter your password' },
+                { required: true, message: t('auth.enterPassword') },
                 { min: 6, message: 'Password must be at least 6 characters' }
               ]}
             >
               <Input.Password
                 prefix={<LockOutlined className="text-gray-400" />}
-                placeholder="Enter your password"
+                placeholder={t('auth.enterPassword')}
                 className="rounded-lg"
               />
             </Form.Item>
@@ -85,7 +94,7 @@ const LoginPage = () => {
                 loading={isLoading}
                 className="w-full h-12 rounded-lg bg-blue-500 hover:bg-blue-600 border-blue-500 hover:border-blue-600 text-base font-medium"
               >
-                {isLoading ? 'Signing In...' : 'Sign In'}
+                {isLoading ? t('auth.loggingIn') : t('auth.loginButton')}
               </Button>
             </Form.Item>
           </Form>

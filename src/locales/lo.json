@@ -1,0 +1,121 @@
+{
+  "common": {
+    "loading": "ກຳລັງໂຫລດ...",
+    "save": "ບັນທຶກ",
+    "cancel": "ຍົກເລີກ",
+    "delete": "ລຶບ",
+    "edit": "ແກ້ໄຂ",
+    "add": "ເພີ່ມ",
+    "search": "ຄົ້ນຫາ",
+    "filter": "ກອງ",
+    "export": "ສົ່ງອອກ",
+    "import": "ນຳເຂົ້າ",
+    "refresh": "ໂຫລດໃໝ່",
+    "back": "ກັບຄືນ",
+    "next": "ຕໍ່ໄປ",
+    "previous": "ກ່ອນໜ້າ",
+    "submit": "ສົ່ງ",
+    "confirm": "ຢືນຢັນ",
+    "close": "ປິດ",
+    "yes": "ແມ່ນ",
+    "no": "ບໍ່"
+  },
+  "auth": {
+    "login": "ເຂົ້າສູ່ລະບົບ",
+    "logout": "ອອກຈາກລະບົບ",
+    "email": "ອີເມວ",
+    "password": "ລະຫັດຜ່ານ",
+    "rememberMe": "ຈົດຈຳຂ້ອຍໄວ້",
+    "forgotPassword": "ລືມລະຫັດຜ່ານ?",
+    "loginTitle": "ຍິນດີຕ້ອນຮັບກັບຄືນ",
+    "loginSubtitle": "ກະລຸນາເຂົ້າສູ່ລະບົບເພື່ອດຳເນີນການຕໍ່",
+    "enterEmail": "ປ້ອນອີເມວຂອງທ່ານ",
+    "enterPassword": "ປ້ອນລະຫັດຜ່ານຂອງທ່ານ",
+    "loginButton": "ເຂົ້າສູ່ລະບົບ",
+    "loggingIn": "ກຳລັງເຂົ້າສູ່ລະບົບ...",
+    "otp": {
+      "title": "ຢືນຢັນລະຫັດ OTP",
+      "subtitle": "ປ້ອນລະຫັດ 6 ຕົວທີ່ສົ່ງໄປຫາ",
+      "enterCode": "ປ້ອນລະຫັດ 6 ຕົວ",
+      "verify": "ຢືນຢັນ",
+      "verifying": "ກຳລັງຢືນຢັນ...",
+      "resend": "ສົ່ງລະຫັດ OTP ໃໝ່",
+      "resending": "ກຳລັງສົ່ງໃໝ່...",
+      "didntReceive": "ບໍ່ໄດ້ຮັບລະຫັດ?",
+      "newCodeSent": "ສົ່ງລະຫັດ OTP ໃໝ່ແລ້ວ!",
+      "changeEmail": "ປ່ຽນອີເມວ"
+    },
+    "errors": {
+      "invalidCredentials": "ອີເມວຫຼືລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ",
+      "invalidOTP": "ລະຫັດ OTP ບໍ່ຖືກຕ້ອງ",
+      "otpExpired": "ລະຫັດ OTP ໝົດອາຍຸແລ້ວ",
+      "sessionExpired": "ເຊດຊັນຂອງທ່ານໝົດອາຍຸແລ້ວ ກະລຸນາເຂົ້າສູ່ລະບົບໃໝ່"
+    }
+  },
+  "menu": {
+    "dashboard": "ແດັຊບອດ",
+    "products": "ສິນຄ້າ",
+    "orders": "ຄຳສັ່ງຊື້",
+    "customers": "ລູກຄ້າ",
+    "settings": "ຕັ້ງຄ່າ",
+    "profile": "ໂປຣໄຟລ໌"
+  },
+  "dashboard": {
+    "title": "ແດັຊບອດ",
+    "welcome": "ຍິນດີຕ້ອນຮັບກັບຄືນ",
+    "totalSales": "ຍອດຂາຍລວມ",
+    "totalOrders": "ຄຳສັ່ງຊື້ທັງໝົດ",
+    "totalCustomers": "ລູກຄ້າທັງໝົດ",
+    "totalProducts": "ສິນຄ້າທັງໝົດ",
+    "recentOrders": "ຄຳສັ່ງຊື້ລ່າສຸດ",
+    "topProducts": "ສິນຄ້າຍອດນິຍົມ",
+    "salesTrend": "ແນວໂນ້ມຍອດຂາຍ"
+  },
+  "products": {
+    "title": "ສິນຄ້າ",
+    "addProduct": "ເພີ່ມສິນຄ້າ",
+    "editProduct": "ແກ້ໄຂສິນຄ້າ",
+    "productName": "ຊື່ສິນຄ້າ",
+    "productCode": "ລະຫັດສິນຄ້າ",
+    "category": "ໝວດໝູ່",
+    "price": "ລາຄາ",
+    "stock": "ສະຕັອກ",
+    "description": "ລາຍລະອຽດ",
+    "status": "ສະຖານະ",
+    "active": "ໃຊ້ງານ",
+    "inactive": "ບໍ່ໃຊ້ງານ",
+    "inStock": "ມີສິນຄ້າ",
+    "outOfStock": "ສິນຄ້າໝົດ",
+    "lowStock": "ສິນຄ້າໃກ້ໝົດ"
+  },
+  "orders": {
+    "title": "ຄຳສັ່ງຊື້",
+    "orderNumber": "ເລກທີ່ຄຳສັ່ງຊື້",
+    "customer": "ລູກຄ້າ",
+    "date": "ວັນທີ",
+    "total": "ຍອດລວມ",
+    "status": "ສະຖານະ",
+    "pending": "ລໍຖ້າດຳເນີນການ",
+    "processing": "ກຳລັງດຳເນີນການ",
+    "completed": "ສຳເລັດ",
+    "cancelled": "ຍົກເລີກ",
+    "viewDetails": "ເບິ່ງລາຍລະອຽດ"
+  },
+  "customers": {
+    "title": "ລູກຄ້າ",
+    "customerName": "ຊື່ລູກຄ້າ",
+    "email": "ອີເມວ",
+    "phone": "ເບີໂທລະສັບ",
+    "address": "ທີ່ຢູ່",
+    "registeredDate": "ວັນທີ່ລົງທະບຽນ",
+    "totalOrders": "ຄຳສັ່ງຊື້ທັງໝົດ",
+    "totalSpent": "ຍອດຊື້ທັງໝົດ"
+  },
+  "profile": {
+    "View Profile": "ເບິ່ງໂປຣໄຟລ໌",
+    "Theme": "ໂຫມດສີ",
+    "Language": "ພາສາ",
+    "Logout": "ອອກຈາກລະບົບ",
+    "Settings": "ການຕັ້ງຄ່າ"
+  }
+}

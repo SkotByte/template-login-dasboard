@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Spin } from 'antd'
 import { useAuthStore } from '../../store/authStore'
@@ -10,11 +10,12 @@ interface ProtectedRouteProps {
 }
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
-  const { isLoading, otpStep, tempEmail, isAuthenticated, user } = useAuthStore()
+  const { isLoading, otpStep, tempEmail, isAuthenticated, user, checkAuth } = useAuthStore()
 
-      // useEffect(() => {
-      //     logout();
-      // }, [])
+  useEffect(() => {
+    // Check authentication on mount (when page is refreshed or opened)
+    checkAuth()
+  }, [checkAuth])
 
   // Show loading spinner while checking authentication
   if (isLoading) {

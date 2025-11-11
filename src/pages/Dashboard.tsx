@@ -87,10 +87,10 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Dashboard</h1>
       
-      <Row gutter={16} className="mb-6">
-        <Col span={6}>
+      <Row gutter={[16, 16]} className="mb-6">
+        <Col xs={24} sm={12} lg={6}>
           <Card className="hover:shadow-md transition-shadow">
             <Statistic
               title="Total Products"
@@ -100,7 +100,7 @@ const Dashboard = () => {
             />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} lg={6}>
           <Card className="hover:shadow-md transition-shadow">
             <Statistic
               title="Total Orders"
@@ -110,7 +110,7 @@ const Dashboard = () => {
             />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} lg={6}>
           <Card className="hover:shadow-md transition-shadow">
             <Statistic
               title="Total Customers"
@@ -120,7 +120,7 @@ const Dashboard = () => {
             />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} lg={6}>
           <Card className="hover:shadow-md transition-shadow">
             <Statistic
               title="Total Revenue"
@@ -140,6 +140,7 @@ const Dashboard = () => {
           rowKey="id"
           pagination={false}
           className="rounded-lg"
+          scroll={{ x: 800 }}
         />
       </Card>
     </div>
